@@ -1,0 +1,16 @@
+body{
+  background-color: #E3B7A0;
+}
+
+h1{
+  color: navy;
+}
+
+hr{
+/* background-color:white; */
+border-style: none;
+border-top-style: dotted;
+border-color: pink;
+border-width: 5px;
+width: 80%
+}

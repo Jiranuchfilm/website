@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+* a{
+  text-decoration: none;
+}
+* li{
+  list-style: none;
+}
+.container{
+  position: relative;;
+  min-height: 100vh;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFA1A1;
+    z-index:-1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(100%);
+}
+.menu{
+  position: relative;
+  width: 85%;
+  height: 15vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/*เปลี่ยนสี logo*/
+.logo a{
+  font-size: 2rem;
+  color: #fff;
+}
+.menu ul{
+  display: flex;
+  align-items: center;
+}
+.menu ul li{
+  padding: 0 17px;
+}
+.menu ul li a{
+  font-weight: bold;
+  color: #fff;
+  font-size: 17px;
+}
+
+/* Content */
+
+.content{
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.content .header,.grid-card{
+  width: 50%;
+  position: relative;
+}
+.content .header{
+  color: #fff;
+  padding: 20px;
+}
+.content .header h3{
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+.content .header h3 i{
+  color: F9FFA4;
+}
+.content .header h1{
+  font-size: 5rem;
+}
+.contact .header p{
+  opacity: .6;
+}
+.grid-card{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
+}
+
+.grid-card .box{
+  width: 100%;
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  transition: .4s;
+  position: relative;
+}
+.bg1{
+  background-color: B4FF9F;
+}
+.bg2{
+  background-color: B4FF9F;
+}
+.bg3{
+  background-color: B4FF9F;
+}
+.bg4{
+  background-color: B4FF9F;
+}
+.content .box h2{
+  position: absolute;
+  bottom: 7px;
+  left: 15px;
+  color: #fff;
+}
+.content .box:hover{
+  transform: translateY(-15px);
+}
+.header button{
+  border: solid 3px #fff;
+  background: none;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 5px 15px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.header button:hover{
+  background: #fff;
+  color: #000;
+}
